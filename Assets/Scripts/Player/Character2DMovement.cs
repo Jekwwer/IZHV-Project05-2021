@@ -240,7 +240,7 @@ public class Character2DMovement : MonoBehaviour
 			var jump = mInput.jump;
 			var falling = !mController.isGrounded && mFallTimeoutDelta <= 0.0f;
 
-			/*
+            /*
 			 * Task #1a: Passing properties to the Animator
 			 * 
 			 * After rotating the character, he should now be able to look in the
@@ -278,6 +278,20 @@ public class Character2DMovement : MonoBehaviour
 			 *   * Current Animator instance: *animator*
 			 *   * Animator methods: *SetFloat* and *SetBool*
 			 */
-	    }
+
+            animator.SetFloat("Speed", speed);
+            animator.SetFloat("MoveSpeed", moveSpeed);
+            animator.SetBool("Jump", jump);
+            animator.SetBool("Grounded", grounded);
+            animator.SetBool("Fall", falling);
+            if (crouch && jump)
+            {
+                animator.SetBool("Crouch", false);
+            }
+            else
+            {
+                animator.SetBool("Crouch", crouch);
+            }
+        }
     }
 }
