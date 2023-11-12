@@ -1,83 +1,47 @@
-# IZHV-Exercise05-2021
+# **IZHV-Project05-2021:** 2D Animation
 
-Solution for the 5th assignment from the course _'[IZHV (Introduction to Game Development)](https://www.fit.vut.cz/study/course/250838/)'_ for the academic year 2021/22 at VUT FIT. \
-Řešení 5. úkolu z předmětu _'[IZHV (Základy herního vývoje)](https://www.fit.vut.cz/study/course/250838/.cs)'_ pro akademický rok 2021/22 na VUT FIT.
+> 🎓 **University**: [VUT FIT](https://www.fit.vut.cz/)
+>
+> 📚 **Course**: [Introduction to Game Development (IZHV)](https://www.fit.vut.cz/study/course/250838/)
+>
+> 📅 **Academic Year**: 2021/22
 
-## Task: Animation in 2D
+## 🎯 Task Overview:
 
-[Full Assignment Description](http://cphoto.fit.vutbr.cz/ludo/courses/izhv/exercises/e5/)
+This project focuses on Unity's 2D Animation system. The goal is to familiarize oneself with the Unity environment by animating whimsical characters to move with a range of actions.
 
-**Description:**
-Create animations for whimsical characters using Unity’s 2D Animation system.
+For the nitty-gritty on the assignment requirements and what’s expected, check out the [Full Assignment Description](http://cphoto.fit.vutbr.cz/ludo/courses/izhv/exercises/e5/).
 
-**Instructions:**
+### 🎭 Phase 1: Animation Control
 
-1. **Setup:**
+- **1a**: Tweak the [`Character2DMovement`](Assets/Scripts/Player/Character2DMovement.cs) script for the character to face the right way.
+- **1b**: Empower the `Animator` component to breathe life into character motions.
 
-   - Download project template from the Materials section.
-   - Switch to 2D mode in Unity.
-   - Use WASD + Space for character movement.
+### 🛠️ Phase 2: Character Configuration
 
-2. **Controlling Animation:**
+- **2a**: Import and fine-tune the character sprite in the Sprite Editor.
+- **2b**: Dive into rigging and skinning the character in the Skinning Editor.
 
-   - Use the Animator component to play Animation Clips.
-   - Correct the main character's movement animation.
+### 🏃‍♂️ Phase 3: Character Animation
 
-3. **Character Orientation:**
+- Craft essential animation clips for your character like Idle, Run, and Jump.
 
-   - Adjust character direction based on movement.
-   - Enhance animations for various character states.
+### ⚙️ Phase 4: Animator Configuration
 
-4. **Animator Interface:**
+- Fire up the `Animator Controller` with parameters like Speed and Jump.
+- Get to know the ins and outs of the Animator interface.
+- Mix animations seamlessly with Blend Trees.
+- Install transition conditions within the Animator Controller.
 
-   - Explore the SpelunkyAnimationController.
-   - Understand Layers, Parameters, and the Main View.
+### 🔧 Phase 5: Integration and Testing
 
-5. **Character Preparation:**
-   - Import and prepare a new character sprite.
+- Transform your animated character into a prefab for easy scene placement.
+- Plug your character prefab into the character selector for in-game testing.
+- Verify that your animations are on point when character switching is in action.
 
----
+## 📊 Evaluation Results
 
-**Animating the Character Guide**
+The project successfully fulfilled the requirements.
 
-**1. Preparatory Phase**:
-
-- Place `Assets/Prefabs/Characters/Rikr` prefab in the scene.
-- Unpack Rikr GameObject.
-- Set its position.
-- Manage the `RikrSprite`.
-
-**2. Animator Controller Setup**:
-
-- Create `RikrAnimationController`.
-- Assign and open Animator UI.
-- Add required parameters.
-
-**3. Crafting Animation Clips**:
-
-- Open Animation window.
-- Create and complete various animation clips.
-
-**4. Implementation**:
-
-- Convert Rikr GameObject to a prefab.
-- Replace in the Character Selector script.
-- Test character swapping and set up Animator Controller.
-
-**5. Final Steps**:
-
-- Finalize animations and scene hierarchy.
-- Submit the exercise.
-
-**FAQ**:
-
-- **Rikr disappears in-game**: Use the appropriate prefab and remove Player Control components.
-- **New animations malfunction**: Check attributes and fix missing ones.
-
-## Result
-
-TBD
-
-## Evaluation
-
-Total points: **6/6**
+🟢🟢🟢🟢🟢  
+**Total Points: 6/6**
